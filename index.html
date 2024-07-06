@@ -12,7 +12,7 @@
     <div id="header">
         <div class="contenor">
             <nev id="nav">
-            <img src="Screenshot 2024-06-28 154011.png" class="logo">
+            <h2 id="my-name" href="#header">SAROJ.K</h2>
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -26,7 +26,7 @@
         </nev>
         <div class="header-text">
             <p>Web Devloper</p>
-            <h1> Hi, i'm <span>Saroj</span><br> Kumar From Bihar</h1>
+            <h1> Hi, it's <span>Saroj</span><br> Kumar From Bihar</h1>
         </div>
     </div>
     </div>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li> <span>C</span> <br>Software Development </li>
+                            <li> <span>C/C++</span> <br>Software Development </li>
                             <li> <span>Web Devlopment</span> <br> Web App Development</li>
                             
                         </ul>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="tab-contents " id="education">
                         <ul>
-                            <li> <span>Web Devlopment at Apna Collage </span> <br> </li>
+                            <li> Web Devlopment at <span> Apna Collage </span> <br> </li>
                             <li>Persuing B.Tech at  <span>Maharaja Ranjeet Shingh Punjab Techinacl University</span> <br> </li>
                             
                         </ul>
@@ -111,7 +111,7 @@
                     <div class="layer">
                         <h3> Landing Page</h3>
                         <p>This is the Landing page of Prasunet Compny i made it as a internship project</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://silintsarojkumar.github.io/Prasunet_WD_01/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -119,7 +119,17 @@
                     <div class="layer">
                         <h3> Stop Watch</h3>
                         <p>This is Stop Watch i made it as a internship project </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://silintsarojkumar.github.io/Prasunet_WD_02/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+
+                </div>
+                <div class="work">
+                    <img src="Screenshot 2024-07-06 231043.png">
+                    <div class="layer">
+                        <h3> Tic Tac Toe</h3>
+                        <p>This is Tic Tac Toe game i made it as a internship project </p>
+                        <a href="https://silintsarojkumar.github.io/Prasunet_WD_04/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                     
 
@@ -161,55 +171,12 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright Saroj. Made with <i class="fa-solid fa-heart"></i> by Trisha Pvt Ltd</p>
+            <p>Copyright Saroj. Made  with <i class="fa-solid fa-heart"></i> by Trisha Pvt Ltd</p>
         </div>
     </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for( tablink of tablinks){
-                tablink.classList.remove("active-link")
-            }
-            for( tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-            
-           
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-        
-    </script>
-    <script>
-        const scriptURL = '<https://script.google.com/macros/s/AKfycbzd5AdGi0ArxBfX89ZvC0qKtGR4iTCIdCc8Dn3OeydnNG1mBMXEba0qExB-NAEzaQXX/exec>'
-        const form = document.forms['submit-to-google-sheet']
-        const msg= document.getElementById("msg")
+    <script src="potfolio.js">
       
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Massage Sent Succsefully"
-                setTimeout(function(){
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
-                
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+    </script>
+   
 </body>
 </html>
